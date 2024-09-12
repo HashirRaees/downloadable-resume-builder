@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Downloadable Resume Builder by Hashir Raees!</h1>
+    <form id="resumeform">
+        <!--Personal info-->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="username">CV URL:</label>
+            <input type="text" name="username" id="username" required><br/>
+
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required><br/>
+            <label for="phone">Phone-Number: </label>
+            <input type="tel" id="phone" name="phone" required>
+        <!--Profile pic-->
+        <label for="profilePic">Profile Pic: </label>
+        <input type="file" id="profilePic" name="profilePic" accept="image/*" required>
+        </fieldset>
+      
+       <!--Education-->
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education:</label>
+            <textarea id="education" name="education" rows="4" required></textarea>
+        </fieldset>
+         
+        <!--Experience-->
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience:</label>
+            <textarea id="experience" name="experience" rows="4" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skill">Skills:</label>
+            <textarea id="skill" name="skill" rows="4" required></textarea>
+        </fieldset>
+        <button type="submit">Generate your resume below</button>
+    </form>
+
+    <div id="resumeoutput"></div>
+        <!--Resume will be generated below-->
+   
+    <script src="script.js"></script>
+</body>
+</html>
